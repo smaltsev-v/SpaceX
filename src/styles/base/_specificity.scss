@@ -1,0 +1,102 @@
+// :root {
+//   --primary-text-color: #ffffff;
+//   --secondary-text-color: #808080;
+//   --button-text-color: #010001;
+//   --background-color: #010001;
+//   --background-color-secondary: #fff;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Roboto:wght@300;400;700&display=swap");
+$primary-text-color: #ffffff;
+$secondary-text-color: #808080;
+$button-text-color: #010001;
+$background-color: #010001;
+$background-color-secondary: #fff;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  height: auto;
+  display: block;
+  min-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: $background-color;
+}
+
+.hidden-header {
+  display: none;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
