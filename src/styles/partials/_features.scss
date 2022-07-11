@@ -1,0 +1,52 @@
+.container__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.features {
+  margin-top: 483px;
+  width: 481px;
+  &__header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 23.5667px;
+    line-height: 1.36;
+    margin-bottom: 45px;
+    color: $primary-text-color;
+  }
+
+  &__block--list {
+    list-style-position: inside;
+    column-count: 2;
+    list-style-type: decimal;
+    column-gap: 40px;
+    margin-bottom: 213px;
+  }
+
+  &__block--text {
+    color: $primary-text-color;
+    font-size: 17.675px;
+    line-height: 1.81;
+  }
+
+  &__block--color {
+    color: $secondary-text-color;
+  }
+}
+.features__text {
+  font-size: 15.7111px;
+  line-height: 1.86;
+  color: $primary-text-color;
+}
+.features__images {
+  margin-bottom: 180px;
+
+  &--falcon {
+    display: block;
+    height: 100%;
+    width: 100%;
+    &:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+  }
+}

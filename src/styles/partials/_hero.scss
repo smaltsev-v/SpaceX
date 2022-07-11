@@ -1,0 +1,26 @@
+.hero {
+  &__content {
+    text-align: center;
+    font-size: 62px;
+    line-height: 1.19px;
+    text-align: center;
+    color: $primary-text-color;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-text-color;
+    margin-top: 60px;
+  }
+}
+
+.line {
+  border-left: 2px solid $primary-text-color;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 312px;
+}

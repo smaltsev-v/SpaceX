@@ -1,0 +1,71 @@
+.footer__logo {
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0%;
+
+  width: 135px;
+  height: auto;
+  align-content: center;
+  padding-top: 50px;
+
+  &:hover,
+  &:focus {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-item:not(:first-child) {
+    margin-left: 20px;
+  }
+  &-link {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17.675px;
+    line-height: 0.85px;
+    color: $primary-text-color;
+    transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      font-size: 16px;
+      color: $secondary-text-color;
+    }
+  }
+}
+.footer__list-item {
+  margin-top: 43px;
+}
+.footer__button {
+  font-size: 17.675px;
+  line-height: 0.84;
+  background-color: $background-color;
+  color: $primary-text-color;
+  border: 1.96389px solid $primary-text-color;
+  border-radius: 6px;
+  margin-top: 77px;
+  margin-bottom: 128px;
+  margin-left: 460px;
+  padding-top: 20px;
+  padding-left: 84px;
+  padding-bottom: 20px;
+  padding-right: 84px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color250ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $button-text-color;
+    background-color: $background-color-secondary;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
